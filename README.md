@@ -1,41 +1,62 @@
-# SamBundler - Pumpfun bundler
-![image](https://github.com/user-attachments/assets/96af6fdd-a8a1-424a-9738-a1903034a90b)
+# 🚀 **SamBundler - Pumpfun Bundler** 🚀
 
-## Overview
+![SamBundler Logo](https://github.com/user-attachments/assets/96af6fdd-a8a1-424a-9738-a1903034a90b)
 
-This is the best, fastest, and most efficient self-bundling script for PumpFun, allowing you to:
+## 📖 **Overview**
 
-- Create a coin
-- Snipe
-- Create and buy
-- Comment
-- Spam transactions
+Welcome to **SamBundler** — the ultimate, fastest, and most efficient **self-bundling script** for **PumpFun**! With this tool, you can:
 
-## Installation
-1 - Download the code
-2 - Open a cmd in the same folder and type ```npm i ``` to install the libraries
-3 - Run ```node index.js```
+- 💰 **Create a coin**
+- 🎯 **Snipe** tokens in real-time
+- 🛒 **Create and buy** tokens instantly
+- 💬 **Comment** on transactions
+- 🚨 **Spam transactions** for maximum engagement
 
-## Usage Example
+---
 
-First you need to set a private key if you want to snipe, so start the bot and press the option 6.
+## 🛠️ **Installation**
 
-Then you need to fund an account with atleast 0.004 SOL to start sniping. 
+Getting started is quick and easy! Follow the steps below to set up **SamBundler**:
 
-### Crating a token
+1. **Download the code** from the repository.
+2. Open a **Command Prompt (CMD)** in the same folder as the downloaded code.
+3. Run the following command to install the required libraries:
+  ``` npm i ```
+4. Once installed, run the script with:
+   ```node index.js```
 
-When selecting create a token you will be asked to input 
+---
 
-- name
-- ticker
-- image
-- description
+## 🔧 **Usage Example**
 
-  ![image2](https://github.com/user-attachments/assets/4b95bbab-d786-469b-8f42-2854b85eb4f9)
+### 1️⃣ **Set Your Private Key**
+To start sniping, you'll need to configure your private key.
 
-After you will have to wait 30 seconds untill the token will be crated.
+- Run the bot and select option **6** to enter your private key.
+- Ensure your account has at least **0.004 SOL** to begin sniping.
 
-#### createAndBuy
+---
+
+### 2️⃣ **Creating a Token**
+
+When selecting "Create a Token," you will be prompted to input the following details:
+
+- **Name** 🏷️: Choose the name of your token.
+- **Ticker** 🪙: Set the token's ticker (symbol).
+- **Image** 🖼️: Upload a logo for your token.
+- **Description** 📝: Write a description for your token.
+
+After submitting your details, **wait 30 seconds** while the token is created and registered on the blockchain.
+
+![Create Token](https://github.com/user-attachments/assets/4b95bbab-d786-469b-8f42-2854b85eb4f9)
+
+---
+
+## 🧑‍💻 **createAndBuy Function**
+
+The **createAndBuy** function allows you to **create a new token** and **immediately buy it**. Here’s how to use it:
+
+### **Function Signature:**
 
 ```typescript
 async createAndBuy(
@@ -50,28 +71,15 @@ async createAndBuy(
 ): Promise<TransactionResult>
 ```
 
-- Creates a new token and buys it.
-- **Parameters**:
-  - `creator`: The keypair of the token creator.
-  - `mint`: The keypair of the mint account.
-  - `createTokenMetadata`: Metadata for the token.
-  - `buyAmountSol`: Amount of SOL to buy.
-  - `slippageBasisPoints`: Slippage in basis points (default: 500).
-  - `priorityFees`: Priority fees (optional).
-  - `commitment`: Commitment level (default: DEFAULT_COMMITMENT).
-  - `finality`: Finality level (default: DEFAULT_FINALITY).
-- **Returns**: A promise that resolves to a `TransactionResult`.
+## 🤝 Contributing
 
+We welcome all contributions to make SamBundler even better! Whether it’s bug fixes, new features, or documentation improvements, we’d love your input.
 
+    🧑‍💻 Fork the repository
+    📥 Submit a pull request
+    🗣️ Open an issue if you encounter any bugs or have ideas for enhancements.
 
-## Contributing
+## 📜 License
 
-We welcome contributions! Please submit a pull request or open an issue to discuss any changes.
-
-## License
-
-This project is licensed under the MIT License
-
----
-
+This project is licensed under the MIT License.
 
