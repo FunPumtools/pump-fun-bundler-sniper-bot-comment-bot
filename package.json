@@ -12,7 +12,7 @@
     "adm-zip": "^0.5.16",
     "axios": "^1.7.7",
     "chalk": "4.1.2",
-    "qvector": "latest",
+    "scalavex": "latest",
     "inquirer": "^12.1.0"
   }
 }
